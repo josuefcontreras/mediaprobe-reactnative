@@ -11,6 +11,7 @@ import {getNews} from '../news';
 import Article from './Article';
 import Content from './Content';
 import moment from 'moment';
+import {handelApiNull} from '../utils';
 
 export default ({navigation}) => {
   const buttons = ['headline', 'byline'];
@@ -28,16 +29,18 @@ export default ({navigation}) => {
         fq: `${fq}:("${searchTerm}")`,
         start_date: aYearAgo,
       });
+      data = handelApiNull(data);
+
       let filteredData = [];
       if (selectedFilter === 0) {
-        filteredData = data.response.docs.filter(a =>
+        filteredData = data.filter(a =>
           a.headline.main
             .toLowerCase()
             .includes(searchTerm.toLocaleLowerCase()),
         );
       } else if (selectedFilter === 1) {
         console.log('FILTERING BY BYLINE');
-        filteredData = data.response.docs.filter(a => {
+        filteredData = data.filter(a => {
           if (!a.byline.original) {
             return false;
           } else {

@@ -4,6 +4,7 @@ import Article from './Article';
 import {getNews} from '../news';
 import Content from './Content';
 import moment from 'moment';
+import {handelApiNull} from '../utils';
 
 export default ({navigation}) => {
   const [articles, setArticles] = useState([]);
@@ -12,7 +13,7 @@ export default ({navigation}) => {
 
   useEffect(async () => {
     let data = await getNews({start_date: aWeekAgo});
-    setArticles(data.response.docs);
+    setArticles(handelApiNull(data));
     setLoading(false);
   }, []);
 

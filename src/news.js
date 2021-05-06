@@ -5,6 +5,6 @@ export async function getNews(passedParams) {
   let params = new URLSearchParams(passedParams).toString();
   let Url = `${BASE_API_URL}?api-key=${API_KEY}&${params}`;
   console.log(Url);
-  let result = await fetch(Url);
-  return result.json();
+  let data = await fetch(Url);
+  return data.json();
 }

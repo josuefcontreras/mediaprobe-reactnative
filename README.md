@@ -12,5 +12,5 @@ Install the dependencies and devDependencies and start the server.
 git clone https://github.com/josuefcontreras/mediaprobe-reactnative
 cd mediaprobe-reactnative
 npm i
-npx "react-native run-android" or "npx react-native run-ios" depending on your platform.
+Run "npx react-native run-android" or "npx react-native run-ios" depending on your platform.
 ```

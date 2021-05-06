@@ -15,6 +15,4 @@ npm i
 Run "npx react-native run-android" or "npx react-native run-ios" depending on your platform.
 ```
 
-![Alt text](./img/img-1.jpeg?raw=true 'home')
-![Alt text](./img/img-2.jpeg?raw=true 'article details')
-![Alt text](./img/img-3.jpeg?raw=true 'search')
+![Alt text](./img/img-1.png?raw=true 'screens')

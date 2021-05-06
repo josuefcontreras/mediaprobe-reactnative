@@ -14,3 +14,4 @@ Run "npx react-native run-android" or "npx react-native run-ios" depending on yo
 ```
 
 ![Alt text](./img/img-1.png?raw=true 'screens')
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/OUvVTCmMmSY)

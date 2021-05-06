@@ -1,6 +1,6 @@
 # mediaprobe-reactnative
 
-This is s simple news app made in React Native. The data is fetched from The New York Times API.
+This is a simple mobile news app made in React Native. The data is fetched from The New York Times API.
 
 ## Installation
 
